@@ -1,0 +1,148 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: #007bff;
+  color: #fff;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+  position: relative; /* Added for dropdown positioning */
+}
+
+nav ul li {
+  display: inline-block; /* Changed to inline-block for dropdown */
+  margin: 0 15px;
+  position: relative; /* Added for dropdown positioning */
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Dropdown styles */
+nav ul li .dropdown {
+  display: none; /* Hide dropdown by default */
+  position: absolute; /* Position it absolutely */
+  background-color: #039ad6; /* Match the navbar background */
+  padding: 10px 0; /* Add some padding */
+  z-index: 1000; /* Ensure it appears above other elements */
+}
+
+nav ul li:hover .dropdown {
+  display: block; /* Show dropdown on hover */
+}
+
+nav ul li .dropdown li {
+  display: block; /* Stack dropdown items vertically */
+  margin: 0; /* Remove margin for dropdown items */
+}
+
+nav ul li .dropdown li a {
+  padding: 10px 20px; /* Add padding for dropdown links */
+  display: block; /* Make the entire area clickable */
+}
+
+nav ul li .dropdown li a:hover {
+  background-color: #00b35f; /* Change background on hover */
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background: #007bff;
+  color: #fff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+h1,
+h2 {
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.column {
+  flex: 1; /* Membagi ruang secara merata */
+  padding: 10px;
+  box-sizing: border-box; /* Menghitung padding dalam lebar */
+}
+
+.kolom {
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #ffffff, #f9f9f9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.kolom:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.kolom h2 {
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+}
+
+.kolom img {
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.kolom img:hover {
+  transform: scale(1.05);
+}
+
+.p {
+  margin-bottom: 1em; /* Menambahkan jarak antar paragraf */
+}
+.lyrics {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.verse {
+  margin-bottom: 15px;
+}
